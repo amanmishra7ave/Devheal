@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:programmer_health/Screens/goals_screen.dart';
 import 'package:programmer_health/Screens/home_screen.dart';
 
 void main() {
@@ -12,13 +13,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // darkTheme: ThemeData.dark(),
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: HomeScreen()
+      initialRoute: '/',
+      routes: {
+        '/':(context)=>HomeScreen(),
+        '/goals':(context)=>GoalTrackingScreen()
+      },
+      // home: HomeScreen()
     );
   }
 }
