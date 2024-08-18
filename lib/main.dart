@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:programmer_health/Screens/goals_screen.dart';
 import 'package:programmer_health/Screens/home_screen.dart';
+import 'package:programmer_health/Screens/profile_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,10 +19,11 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      initialRoute: '/',
+      initialRoute: '/profile',
       routes: {
         '/':(context)=>HomeScreen(),
-        '/goals':(context)=>GoalTrackingScreen()
+        '/goals':(context)=>GoalTrackingScreen(),
+        '/profile':(context)=>ProfileScreen(),
       },
       // home: HomeScreen()
     );

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:programmer_health/Screens/goals_screen.dart';
+import 'package:programmer_health/Screens/profile_screen.dart';
 import 'package:programmer_health/Screens/stats_screen.dart';
-import 'package:programmer_health/Widgets/custom_chart.dart';
+import 'package:programmer_health/Widgets/custom_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -58,6 +59,10 @@ class HomeScreen extends StatelessWidget {
           if(index==1){
             Navigator.push(context, 
             MaterialPageRoute(builder: (context)=>StatsScreen()));
+          }
+          if(index==3) {
+            Navigator.push(context,
+            MaterialPageRoute(builder: (context)=>ProfileScreen()));
           }
         },
       ),
