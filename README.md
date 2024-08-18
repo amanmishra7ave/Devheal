@@ -69,15 +69,15 @@ lib/
 
 2. Clone this repository:
 
-git clone https://github.com/amanmishra7ave/Devheal
+(`git clone https://github.com/amanmishra7ave/Devheal`)
 
 3. Get the dependencies:
 
-flutter pub get
+(`flutter pub get`)
 
 4. Run the app:
 
-flutter run
+(`flutter run`)
 
 
 ## Usage
